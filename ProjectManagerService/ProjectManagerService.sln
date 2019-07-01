@@ -13,6 +13,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManager.InterfaceLay
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManagerService", "ProjectManagerService\ProjectManagerService.csproj", "{02A234A4-8F5C-41DC-B5EE-5F5E1023AD7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManagerService.Tests", "ProjectManagerService.Tests\ProjectManagerService.Tests.csproj", "{105B4372-97D0-45DF-A2A4-428F467CC72F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestResults", "TestResults", "{CAE842D0-683A-49BF-AF98-6748395C9DD7}"
+	ProjectSection(SolutionItems) = preProject
+		TestResults\OpenCover.docx = TestResults\OpenCover.docx
+		TestResults\OpenCover_V1.JPG = TestResults\OpenCover_V1.JPG
+		TestResults\summary.htm = TestResults\summary.htm
+		TestResults\TestResult.xml = TestResults\TestResult.xml
+		TestResults\Unit_Performance_Test_Result.JPG = TestResults\Unit_Performance_Test_Result.JPG
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +50,10 @@ Global
 		{02A234A4-8F5C-41DC-B5EE-5F5E1023AD7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02A234A4-8F5C-41DC-B5EE-5F5E1023AD7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02A234A4-8F5C-41DC-B5EE-5F5E1023AD7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{105B4372-97D0-45DF-A2A4-428F467CC72F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{105B4372-97D0-45DF-A2A4-428F467CC72F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{105B4372-97D0-45DF-A2A4-428F467CC72F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{105B4372-97D0-45DF-A2A4-428F467CC72F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
