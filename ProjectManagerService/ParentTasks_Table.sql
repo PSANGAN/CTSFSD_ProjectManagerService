@@ -1,0 +1,21 @@
+﻿USE [CTSFullStack]
+GO
+
+/****** Object:  Table [dbo].[ParentTasks]    Script Date: 7/6/2019 2:53:26 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[ParentTasks](
+	[ParentTaskID] [int] IDENTITY(1,1) NOT NULL,
+	[ParentTaskName] [varchar](100) NOT NULL,
+ CONSTRAINT [PK_ParentTasks1] PRIMARY KEY CLUSTERED 
+(
+	[ParentTaskID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+

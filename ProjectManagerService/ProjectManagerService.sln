@@ -24,6 +24,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestResults", "TestResults"
 		TestResults\Unit_Performance_Test_Result.JPG = TestResults\Unit_Performance_Test_Result.JPG
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database_Scripts", "Database_Scripts", "{34CFA89B-39BD-49EC-A9F9-A0DE7A9084DF}"
+	ProjectSection(SolutionItems) = preProject
+		ParentTasks_Table.sql = ParentTasks_Table.sql
+		Projects_Table.sql = Projects_Table.sql
+		Tasks_Table.sql = Tasks_Table.sql
+		Users_table.sql = Users_table.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
