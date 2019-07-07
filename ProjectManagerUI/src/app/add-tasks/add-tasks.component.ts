@@ -273,7 +273,7 @@ export class AddTasksComponent implements OnInit {
     tmpDate.setDate(tmpDate.getDate() + 1);
     this.EndDate = tmpDate.toISOString().split('T')[0];
     this.addButtonText = "Add Task";
-
+    this.IsParentTask = false; 
     this.TaskID = undefined;
     this.TaskName = undefined;
     this.ProjectID = undefined;

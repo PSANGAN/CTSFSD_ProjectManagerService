@@ -117,7 +117,7 @@ export class ProjectsComponent implements OnInit {
         .subscribe((data: any) => {
           this.ResetData();
           this.GetProjects();
-          document.getElementById('userMsg').innerText = "ProjectName added successfully...";
+          document.getElementById('userMsg').innerText = "Project added successfully...";
           document.getElementById('userMsg').style.color = "green";
         },
           function (error) {
@@ -169,7 +169,7 @@ export class ProjectsComponent implements OnInit {
         .subscribe((data: any) => {
           this.ResetData();
           this.GetProjects();
-          document.getElementById('userMsg').innerText = "ProjectName updated successfully...";
+          document.getElementById('userMsg').innerText = "Project updated successfully...";
           document.getElementById('userMsg').style.color = "green";
         },
           function (error) {
@@ -188,7 +188,7 @@ export class ProjectsComponent implements OnInit {
       .subscribe((data: any) => {
         this.ResetData();
         this.GetProjects();
-        document.getElementById('userMsg').innerText = "ProjectName suspended successfully...";
+        document.getElementById('userMsg').innerText = "Project suspended successfully...";
         document.getElementById('userMsg').style.color = "green";
       },
         function (error) {
