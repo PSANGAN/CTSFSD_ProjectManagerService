@@ -11,7 +11,7 @@ namespace ProjectManagerService.Models
         public int TaskID { get; set; }
         public int? ParentTaskID { get; set; }
         public int? ProjectID { get; set; }
-        public string ParentTask { get; set; }
+        public string ParentTaskName { get; set; }
         public string Project { get; set; }
         public string TaskName { get; set; }
         public int UserID { get; set; }

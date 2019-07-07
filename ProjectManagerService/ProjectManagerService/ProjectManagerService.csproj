@@ -15,7 +15,7 @@
     <RootNamespace>ProjectManagerService</RootNamespace>
     <AssemblyName>ProjectManagerService</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -145,7 +145,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>60476</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:60476/</IISUrl>
+          <IISUrl>http://localhost/ProjectManagerService</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

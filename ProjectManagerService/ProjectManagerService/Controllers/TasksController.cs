@@ -131,7 +131,7 @@ namespace ProjectManagerService.Controllers
                        TaskName = s.TaskName,
                        ProjectID = s.ProjectID,
                        Project = s.Project,
-                       ParentTask = s.ParentTask,
+                       ParentTaskName = s.ParentTask,
                        Priority = s.Priority,
                        StartDate = s.StartDate,
                        EndDate = s.EndDate,
