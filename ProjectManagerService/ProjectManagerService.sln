@@ -23,6 +23,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database_Scripts", "Databas
 		Database_Scripts\Users_table.sql = Database_Scripts\Users_table.sql
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logs", "Logs", "{24D33A3A-B119-45C5-A77D-E7BDAA201906}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeCoverage", "CodeCoverage", "{8B9EA445-850D-4E2B-ACB6-7C6ACBCA0468}"
+	ProjectSection(SolutionItems) = preProject
+		Logs\CodeCoverage\OpenCover.docx = Logs\CodeCoverage\OpenCover.docx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +63,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8B9EA445-850D-4E2B-ACB6-7C6ACBCA0468} = {24D33A3A-B119-45C5-A77D-E7BDAA201906}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6DCFC977-2B8C-476B-AA08-77B50C0C023A}

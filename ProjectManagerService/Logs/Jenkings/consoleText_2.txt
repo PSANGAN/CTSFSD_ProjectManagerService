@@ -1,0 +1,102 @@
+﻿Started by user PGS
+Running as SYSTEM
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\CTSFSD
+using credential f8bb7e2d-3152-4fc2-aace-4d2c2cc0b0ea
+ > C:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/PSANGAN/CTSFSD_ProjectManagerService.git # timeout=10
+Fetching upstream changes from https://github.com/PSANGAN/CTSFSD_ProjectManagerService.git
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > C:\Program Files\Git\bin\git.exe fetch --tags --progress https://github.com/PSANGAN/CTSFSD_ProjectManagerService.git +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 9e80e3b4827147439222d62ace8f799918b286ed (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f 9e80e3b4827147439222d62ace8f799918b286ed
+Commit message: "Interface and Business changes commited..."
+ > C:\Program Files\Git\bin\git.exe rev-list --no-walk 9e80e3b4827147439222d62ace8f799918b286ed # timeout=10
+Path To MSBuild.exe: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe
+Executing the command cmd.exe /C " chcp 1252 & "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe" C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManagerService.sln " && exit %%ERRORLEVEL%% from C:\Program Files (x86)\Jenkins\workspace\CTSFSD
+[CTSFSD] $ cmd.exe /C " chcp 1252 & "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe" C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManagerService.sln " && exit %%ERRORLEVEL%%
+Active code page: 1252
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+Build started 6/29/2019 11:18:08 PM.
+Project "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManagerService.sln" on node 1 (default targets).
+ValidateSolutionConfiguration:
+  Building solution configuration "Debug|Any CPU".
+Project "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManagerService.sln" (1) is building "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.CommonEntities\ProjectManager.CommonEntities.csproj" (2) on node 1 (default targets).
+CoreCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Roslyn\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva+ /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\ProjectManager.CommonEntities.dll /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /target:library /utf8output ParentTasks.cs Projects.cs Properties\AssemblyInfo.cs Tasks.cs Users.cs "C:\WINDOWS\TEMP\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+  Using shared compilation with compiler from directory: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Roslyn
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Debug\ProjectManager.CommonEntities.dll" to "bin\Debug\ProjectManager.CommonEntities.dll".
+  ProjectManager.CommonEntities -> C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.CommonEntities\bin\Debug\ProjectManager.CommonEntities.dll
+  Copying file from "obj\Debug\ProjectManager.CommonEntities.pdb" to "bin\Debug\ProjectManager.CommonEntities.pdb".
+Done Building Project "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.CommonEntities\ProjectManager.CommonEntities.csproj" (default targets).
+Project "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManagerService.sln" (1) is building "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.DataAccessLayer\ProjectManager.DataAccessLayer.csproj" (3) on node 1 (default targets).
+EntityDeployNonEmbeddedResources:
+Skipping target "EntityDeployNonEmbeddedResources" because it has no outputs.
+EntityDeployEmbeddedResources:
+Skipping target "EntityDeployEmbeddedResources" because all output files are up-to-date with respect to the input files.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Roslyn\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva+ /reference:C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll /reference:C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.ComponentModel.DataAnnotations.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Runtime.Serialization.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Security.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\ProjectManager.DataAccessLayer.dll /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /resource:obj\Debug\edmxResourcesToEmbed\ProjectModel.csdl,ProjectModel.csdl /resource:obj\Debug\edmxResourcesToEmbed\ProjectModel.msl,ProjectModel.msl /resource:obj\Debug\edmxResourcesToEmbed\ProjectModel.ssdl,ProjectModel.ssdl /target:library /utf8output ParentTask.cs Project.cs ProjectModel.Context.cs ProjectModel.cs ProjectModel.Designer.cs Properties\AssemblyInfo.cs Task.cs User.cs "C:\WINDOWS\TEMP\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+  Using shared compilation with compiler from directory: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Roslyn
+_CopyFilesMarkedCopyLocal:
+  Touching "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.DataAccessLayer\obj\Debug\ProjectManager.DataAccessLayer.csproj.CopyComplete".
+_CopyAppConfigFile:
+Skipping target "_CopyAppConfigFile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Debug\ProjectManager.DataAccessLayer.dll" to "bin\Debug\ProjectManager.DataAccessLayer.dll".
+  ProjectManager.DataAccessLayer -> C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.DataAccessLayer\bin\Debug\ProjectManager.DataAccessLayer.dll
+  Copying file from "obj\Debug\ProjectManager.DataAccessLayer.pdb" to "bin\Debug\ProjectManager.DataAccessLayer.pdb".
+Done Building Project "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.DataAccessLayer\ProjectManager.DataAccessLayer.csproj" (default targets).
+Project "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManagerService.sln" (1) is building "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.BusinessLayer\ProjectManager.BusinessLayer.csproj" (4) on node 1 (default targets).
+Project "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.BusinessLayer\ProjectManager.BusinessLayer.csproj" (4) is building "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.InterfaceLayer\ProjectManager.InterfaceLayer.csproj" (5:2) on node 1 (default targets).
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Roslyn\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva+ /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\mscorlib.dll" /reference:C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.CommonEntities\bin\Debug\ProjectManager.CommonEntities.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\ProjectManager.InterfaceLayer.dll /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /target:library /utf8output IProjectBL.cs ITaskBL.cs IUserBL.cs Properties\AssemblyInfo.cs "C:\WINDOWS\TEMP\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+  Using shared compilation with compiler from directory: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Roslyn
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.CommonEntities\bin\Debug\ProjectManager.CommonEntities.dll" to "bin\Debug\ProjectManager.CommonEntities.dll".
+  Copying file from "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.CommonEntities\bin\Debug\ProjectManager.CommonEntities.pdb" to "bin\Debug\ProjectManager.CommonEntities.pdb".
+  Touching "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.InterfaceLayer\obj\Debug\ProjectManager.InterfaceLayer.csproj.CopyComplete".
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Debug\ProjectManager.InterfaceLayer.dll" to "bin\Debug\ProjectManager.InterfaceLayer.dll".
+  ProjectManager.InterfaceLayer -> C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.InterfaceLayer\bin\Debug\ProjectManager.InterfaceLayer.dll
+  Copying file from "obj\Debug\ProjectManager.InterfaceLayer.pdb" to "bin\Debug\ProjectManager.InterfaceLayer.pdb".
+Done Building Project "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.InterfaceLayer\ProjectManager.InterfaceLayer.csproj" (default targets).
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Roslyn\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva+ /reference:C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll /reference:C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\mscorlib.dll" /reference:C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.CommonEntities\bin\Debug\ProjectManager.CommonEntities.dll /reference:C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.DataAccessLayer\bin\Debug\ProjectManager.DataAccessLayer.dll /reference:C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.InterfaceLayer\bin\Debug\ProjectManager.InterfaceLayer.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.ComponentModel.DataAnnotations.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\ProjectManager.BusinessLayer.dll /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /target:library /utf8output ProjectBL.cs Properties\AssemblyInfo.cs TaskBL.cs UserBL.cs "C:\WINDOWS\TEMP\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+  Using shared compilation with compiler from directory: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Roslyn
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.CommonEntities\bin\Debug\ProjectManager.CommonEntities.dll" to "bin\Debug\ProjectManager.CommonEntities.dll".
+  Copying file from "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.DataAccessLayer\bin\Debug\ProjectManager.DataAccessLayer.dll" to "bin\Debug\ProjectManager.DataAccessLayer.dll".
+  Copying file from "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.InterfaceLayer\bin\Debug\ProjectManager.InterfaceLayer.dll" to "bin\Debug\ProjectManager.InterfaceLayer.dll".
+  Copying file from "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.CommonEntities\bin\Debug\ProjectManager.CommonEntities.pdb" to "bin\Debug\ProjectManager.CommonEntities.pdb".
+  Copying file from "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.DataAccessLayer\bin\Debug\ProjectManager.DataAccessLayer.pdb" to "bin\Debug\ProjectManager.DataAccessLayer.pdb".
+  Copying file from "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.InterfaceLayer\bin\Debug\ProjectManager.InterfaceLayer.pdb" to "bin\Debug\ProjectManager.InterfaceLayer.pdb".
+  Touching "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.BusinessLayer\obj\Debug\ProjectManager.BusinessLayer.csproj.CopyComplete".
+_CopyAppConfigFile:
+Skipping target "_CopyAppConfigFile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Debug\ProjectManager.BusinessLayer.dll" to "bin\Debug\ProjectManager.BusinessLayer.dll".
+  ProjectManager.BusinessLayer -> C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.BusinessLayer\bin\Debug\ProjectManager.BusinessLayer.dll
+  Copying file from "obj\Debug\ProjectManager.BusinessLayer.pdb" to "bin\Debug\ProjectManager.BusinessLayer.pdb".
+Done Building Project "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManager.BusinessLayer\ProjectManager.BusinessLayer.csproj" (default targets).
+Done Building Project "C:\PGS\Professional\GIT\CTS_FSD_CaseStudy\ProjectManagerService\ProjectManagerService.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:10.69
+Finished: SUCCESS
