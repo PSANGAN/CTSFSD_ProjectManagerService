@@ -23,6 +23,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database_Scripts", "Databas
 		Database_Scripts\Users_table.sql = Database_Scripts\Users_table.sql
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestResults", "TestResults", "{06396621-A228-4E0A-A887-DF4CDD1488CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeCoverage", "CodeCoverage", "{F877EBF9-7F0E-4C64-95D4-84381C7A5CD1}"
+	ProjectSection(SolutionItems) = preProject
+		TestResults\CodeCoverage\OpenCover.docx = TestResults\CodeCoverage\OpenCover.docx
+		TestResults\CodeCoverage\OpenCover_V1.JPG = TestResults\CodeCoverage\OpenCover_V1.JPG
+		TestResults\CodeCoverage\summary.htm = TestResults\CodeCoverage\summary.htm
+		TestResults\CodeCoverage\TestResult.xml = TestResults\CodeCoverage\TestResult.xml
+		TestResults\CodeCoverage\Unit_Performance_Test_Result.JPG = TestResults\CodeCoverage\Unit_Performance_Test_Result.JPG
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +67,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F877EBF9-7F0E-4C64-95D4-84381C7A5CD1} = {06396621-A228-4E0A-A887-DF4CDD1488CD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6DCFC977-2B8C-476B-AA08-77B50C0C023A}
