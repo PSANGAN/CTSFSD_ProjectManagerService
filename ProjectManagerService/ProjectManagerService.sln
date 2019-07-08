@@ -15,23 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManagerService", "Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManagerService.Tests", "ProjectManagerService.Tests\ProjectManagerService.Tests.csproj", "{105B4372-97D0-45DF-A2A4-428F467CC72F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestResults", "TestResults", "{CAE842D0-683A-49BF-AF98-6748395C9DD7}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database_Scripts", "Database_Scripts", "{2B17FA0E-E2E1-4E02-8161-AE5504505B00}"
 	ProjectSection(SolutionItems) = preProject
 		Database_Scripts\ParentTasks_Table.sql = Database_Scripts\ParentTasks_Table.sql
 		Database_Scripts\Projects_Table.sql = Database_Scripts\Projects_Table.sql
 		Database_Scripts\Tasks_Table.sql = Database_Scripts\Tasks_Table.sql
 		Database_Scripts\Users_table.sql = Database_Scripts\Users_table.sql
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code Coverage", "Code Coverage", "{867B6EB8-795A-4443-94DA-B5852DCDD8E7}"
-	ProjectSection(SolutionItems) = preProject
-		TestResults\Code Coverage\OpenCover.docx = TestResults\Code Coverage\OpenCover.docx
-		TestResults\Code Coverage\OpenCover_V1.JPG = TestResults\Code Coverage\OpenCover_V1.JPG
-		TestResults\Code Coverage\summary.htm = TestResults\Code Coverage\summary.htm
-		TestResults\Code Coverage\TestResult.xml = TestResults\Code Coverage\TestResult.xml
-		TestResults\Code Coverage\Unit_Performance_Test_Result.JPG = TestResults\Code Coverage\Unit_Performance_Test_Result.JPG
 	EndProjectSection
 EndProject
 Global
@@ -67,9 +56,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{867B6EB8-795A-4443-94DA-B5852DCDD8E7} = {CAE842D0-683A-49BF-AF98-6748395C9DD7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6DCFC977-2B8C-476B-AA08-77B50C0C023A}
