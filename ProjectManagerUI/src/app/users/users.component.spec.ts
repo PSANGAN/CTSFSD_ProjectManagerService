@@ -36,4 +36,7 @@ describe('UsersComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('Is userlist UnDefined', () => {
+    expect(component.UserList).toBeUndefined();
+  });
 });

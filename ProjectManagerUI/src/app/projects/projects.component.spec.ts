@@ -12,19 +12,21 @@ import { UsersComponent } from '../users/users.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { AddTasksComponent } from '../add-tasks/add-tasks.component';
 import { APP_BASE_HREF } from '@angular/common';
+import { ProjectModel } from '../models/project-model';
 
 describe('ProjectsComponent', () => {
   let component: ProjectsComponent;
   let fixture: ComponentFixture<ProjectsComponent>;
 
-  beforeEach(async(() => {
+   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ViewTasksComponent, UsersComponent, ProjectsComponent, AddTasksComponent],
       imports: [BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(appRoutes)],
-      providers: [ApiService, DialogService, { provide: APP_BASE_HREF, useValue: '/' }],
+      providers: [ApiService, DialogService,
+         { provide: APP_BASE_HREF, useValue: '/' }],
       schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -36,4 +38,7 @@ describe('ProjectsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-});
+  it('Is Count undefined ', () => {
+       expect(component.projListCount).toBeUndefined();
+  });
+  });

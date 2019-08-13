@@ -36,4 +36,7 @@ describe('AddTasksComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('is defined', () => {
+    expect(component).toBeDefined();
+    });
 });

@@ -36,4 +36,7 @@ describe('ViewTasksComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('Is Defined', () => {
+    expect(component).toBeDefined();
+  });
 });
